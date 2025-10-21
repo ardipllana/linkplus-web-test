@@ -7,7 +7,6 @@ import {
   Space,
   Typography,
   Menu,
-  Dropdown,
   Badge,
   Button,
   Drawer,
@@ -23,7 +22,6 @@ import {
   PhoneOutlined,
   SearchOutlined,
   ShoppingCartOutlined,
-  DownOutlined,
   MenuOutlined,
   ExportOutlined,
 } from "@ant-design/icons";
@@ -174,28 +172,28 @@ function useMenuItems(opts: {
           }
         : null;
 
-    const featuresOverlay = (
-      <Menu
-        items={[
-          {
-            key: "company",
-            label: (
-              <Link to="/company" onClick={onLinkClick} style={linkStyle}>
-                {tr("navigationlinks.company", "Company")}
-              </Link>
-            ),
-          },
-          {
-            key: "jobseeker",
-            label: (
-              <Link to="/jobseeker" onClick={onLinkClick} style={linkStyle}>
-                {tr("navigationlinks.jobseeker", "Jobseeker")}
-              </Link>
-            ),
-          },
-        ]}
-      />
-    );
+    // const featuresOverlay = (
+    //   <Menu
+    //     items={[
+    //       {
+    //         key: "company",
+    //         label: (
+    //           <Link to="/company" onClick={onLinkClick} style={linkStyle}>
+    //             {tr("navigationlinks.company", "Company")}
+    //           </Link>
+    //         ),
+    //       },
+    //       {
+    //         key: "jobseeker",
+    //         label: (
+    //           <Link to="/jobseeker" onClick={onLinkClick} style={linkStyle}>
+    //             {tr("navigationlinks.jobseeker", "Jobseeker")}
+    //           </Link>
+    //         ),
+    //       },
+    //     ]}
+    //   />
+    // );
 
     const desktop = [
       authDashboard || undefined,
