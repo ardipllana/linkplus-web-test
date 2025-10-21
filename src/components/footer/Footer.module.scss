@@ -1,0 +1,266 @@
+.footerContainer {
+    position: relative;
+    width: 100%;
+    // min-height: 500px;
+    flex-shrink: 0;
+  }
+  
+  .footerBackground {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .footerOverlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 56, 74, 0.95);
+    backdrop-filter: blur(2px);
+    padding: 60px 0 0;
+  }
+  
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .footerBrand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .logoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hexagon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0% 30%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .brandName {
+    color: white !important;
+    margin: 0 !important;
+    font-size: 28px !important;
+    font-weight: 600 !important;
+  }
+  
+  .brandDescription {
+    color: #cbd5e0 !important;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  
+  .socialIcons {
+    margin-top: 8px;
+    justify-content: center;
+  }
+  
+  .socialLink {
+    color: #cbd5e0 !important;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      color: #6366f1 !important;
+      transform: translateY(-2px);
+    }
+  }
+  
+  .sectionTitle {
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    margin-bottom: 24px !important;
+  }
+  
+  .footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+  
+  .footerLinkWrapper {
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
+  .footerLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e0 !important;
+    text-decoration: none !important;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  
+    &:hover {
+      color: white !important;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      transform: translateX(4px);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  
+      .footerLinkBullet {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+  
+  .footerLinkBullet {
+    font-size: 10px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    color: white;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contactAddress {
+    color: #cbd5e0 !important;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  
+  .contactPhone {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .phoneLabel {
+    color: #cbd5e0 !important;
+    font-size: 14px;
+  }
+  
+  .phoneNumber {
+    color: #6366f1 !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      color: #8b5cf6 !important;
+    }
+  }
+  
+  .contactEmail {
+    color: #cbd5e0 !important;
+    font-size: 14px;
+  }
+  
+  .footerBottom {
+    margin-top: 40px;
+    padding: 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  
+  .copyrightText {
+    color: #cbd5e0 !important;
+    font-size: 14px;
+  }
+  
+  .brandHighlight {
+    color: #6366f1;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .footerOverlay {
+      padding: 40px 0 0;
+    }
+  
+    .footerContent {
+      padding: 0 16px;
+    }
+  
+    .logoContainer {
+      justify-content: center;
+    }
+  
+    .brandName {
+      font-size: 24px !important;
+    }
+  
+    .socialIcons {
+      justify-content: center;
+    }
+  
+    .footerSection {
+      text-align: center;
+    }
+  
+    .sectionTitle {
+      font-size: 18px !important;
+    }
+  
+    .footerLinks {
+      align-items: center;
+    }
+  
+    .contactInfo {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hexagon {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+    }
+  
+    .brandName {
+      font-size: 22px !important;
+    }
+  
+    .footerLink {
+      justify-content: center;
+    }
+  }
+  
